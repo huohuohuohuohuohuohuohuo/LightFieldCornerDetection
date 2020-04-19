@@ -19,7 +19,7 @@ Please if you use the work presented here cite the source
 
 additional files
 --
-We use some files in dataset which are produced by the code in 
+We use some files in dataset which are produced by code in paper
 
 Geometric Calibration of Micro-Lens-Based Light Field Cameras Using Line Features
 https://ieeexplore.ieee.org/abstract/document/7432007
