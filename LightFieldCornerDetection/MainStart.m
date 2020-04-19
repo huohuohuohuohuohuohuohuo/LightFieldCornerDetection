@@ -17,15 +17,15 @@ CornerCoor = [5.5*1.732,6*1.732,5*1.732,4.5*1.732;
 
 CornerCoor=CornerCoor*40./1.4;
 
-CenterlistPath = 'E:\外参标定\CreateFullRes\数据集\OurDataSet-proposed\uniform----pick\microlens_center_list.mat';
+CenterlistPath = 'dataset\CreateFullRes\鏁版嵁闆哱OurDataSet-proposed\uniform----pick\microlens_center_list.mat';
 
 type='Illum';
 for loop = 1:13
     
-    CaliImgPath = ['E:\外参标定\CreateFullRes\数据集\OurDataSet-proposed\uniform----pick\IMG',num2str(loop),'.png'];
-    CenterSubImgPath = ['E:\外参标定\CreateFullRes\数据集\OurDataSet-proposed\uniform----pick\CI_IMG',num2str(loop),'.bmp'];
-    LineFeatherPath = ['E:\外参标定\CreateFullRes\数据集\OurDataSet-proposed\uniform----pick\L_IMG',num2str(loop),'.mat'];
-    CornerInfoPath = ['E:\外参标定\CreateFullRes\数据集\OurDataSet-proposed\uniform----pick\CI_IMG',num2str(loop),'.mat'];
+    CaliImgPath = ['dataset\IMG',num2str(loop),'.png'];
+    CenterSubImgPath = ['dataset\CI_IMG',num2str(loop),'.bmp'];
+    LineFeatherPath = ['dataset\L_IMG',num2str(loop),'.mat'];
+    CornerInfoPath = ['dataset\CI_IMG',num2str(loop),'.mat'];
         
     SIZE = 7*11;
 
@@ -43,7 +43,7 @@ for loop = 1:13
     imshow(uint8(StartTotal.CaliImg));
     hold on;
     
-    % 手动给四个角点的Z坐标
+    % 鎵嬪姩缁欏洓涓鐐圭殑Z鍧愭爣
     StartTotal.export4corners();
     StartTotal.Corner4.cornerUL(3,1) = CornerCoor(loop,1);
     StartTotal.Corner4.cornerUR(3,1) = CornerCoor(loop,2);
